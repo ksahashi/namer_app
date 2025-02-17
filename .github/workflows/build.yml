@@ -14,8 +14,8 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       # The analysis requires to retrieve dependencies and build successfully
-      - name: Build
-        run: flutter build
+      # - name: Build
+      #  run: <commands_to_build_your_project>
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:

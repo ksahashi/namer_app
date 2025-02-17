@@ -21,7 +21,7 @@ jobs:
       - run: flutter pub get
       # The analysis requires to retrieve dependencies and build successfully
       - name: Build
-        run: flutter build ios
+        run: flutter build web
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
